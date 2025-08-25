@@ -1,0 +1,29 @@
+GET http://127.0.0.1:8000/products/ HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/products/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTU4MDEzLCJpYXQiOjE3NTYxNTYyMTMsImp0aSI6ImNlODEwYmNkZmEwNzRjMWM4ZTc5YWJmYzBkMjk1M2VjIiwidXNlcl9pZCI6ImQ4ODJkYjk1LWY3ZWEtNDE4Ni1iNjM5LTQ2NDYzMzNiMWU3NCJ9.33d3eaVIXndDPG3aQghkN4s7kzaYBpXqRJu9KBUSjFU
+
+{
+    "product_name":"Computer",
+    "price" : "20000",
+    "Product description":"It's Amazing",
+    "In stock": "5"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Ammar101",
+    "password": "Ammar101"
+}
+
+###
+
+GET http://127.0.0.1:8000/user/orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU2MTU4MDEzLCJpYXQiOjE3NTYxNTYyMTMsImp0aSI6ImNlODEwYmNkZmEwNzRjMWM4ZTc5YWJmYzBkMjk1M2VjIiwidXNlcl9pZCI6ImQ4ODJkYjk1LWY3ZWEtNDE4Ni1iNjM5LTQ2NDYzMzNiMWU3NCJ9.33d3eaVIXndDPG3aQghkN4s7kzaYBpXqRJu9KBUSjFU 
